@@ -6,15 +6,21 @@
   <title>3D Dog Toys</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
     }
 
     /* NAV BAR */
     .nav {
       position: fixed;
       top: 0;
+      left: 0;
       width: 100%;
       height: 60px;
       background-color: #111;
@@ -22,7 +28,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 30px;
+      padding: 0 20px;
       z-index: 1000;
     }
 
@@ -34,7 +40,7 @@
     .nav a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 16px;
       font-weight: bold;
       cursor: pointer;
     }
@@ -48,6 +54,7 @@
       display: none;
       min-height: 100vh;
       padding-top: 80px;
+      width: 100%;
     }
 
     .active {
@@ -61,11 +68,13 @@
       align-items: center;
       justify-content: center;
       color: white;
+      text-align: center;
     }
 
     #home h1 {
       font-size: 5em;
       letter-spacing: 4px;
+      margin: 0;
     }
 
     /* INVENTORY */
@@ -100,7 +109,7 @@
     /* ABOUT */
     #about {
       background-color: white;
-      padding: 100px 30px;
+      padding: 100px 20px;
     }
 
     #about .content {
