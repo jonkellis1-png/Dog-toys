@@ -20,29 +20,30 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
   }
 
   .nav {
     max-width: 900px; /* matches page content */
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center; /* Center everything */
     padding: 0 20px;
     height: 60px;
+    position: relative;
   }
 
   .logo {
     font-size: 1.4em;
     font-weight: bold;
     color: white;
+    position: absolute; /* keep logo on left */
+    left: 20px;
   }
 
   .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 40px; /* space between links */
   }
 
   .nav-links a {
