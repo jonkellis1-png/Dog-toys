@@ -23,13 +23,14 @@
   }
 
   .nav {
-    max-width: 900px;
+    max-width: 900px; /* aligns with page content */
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* links left, logo right */
     align-items: center;
     padding: 0 20px;
     height: 60px;
+    margin: auto;
   }
 
   .nav-links {
