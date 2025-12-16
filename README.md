@@ -23,27 +23,18 @@
   }
 
   .nav {
-    max-width: 900px; /* matches page content */
+    max-width: 900px;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center; /* Center everything */
     padding: 0 20px;
     height: 60px;
-    position: relative;
-  }
-
-  .logo {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: white;
-    position: absolute; /* keep logo on left */
-    left: 20px;
   }
 
   .nav-links {
     display: flex;
-    gap: 40px; /* space between links */
+    gap: 20px;
   }
 
   .nav-links a {
@@ -55,6 +46,12 @@
 
   .nav-links a:hover {
     text-decoration: underline;
+  }
+
+  .logo {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
   }
 
   /* PAGE SECTIONS */
@@ -110,12 +107,12 @@
   <!-- NAV BAR -->
   <div class="nav-container">
     <div class="nav">
-      <div class="logo">3D Dog Toys</div>
       <div class="nav-links">
         <a onclick="showPage('home')">Home</a>
         <a onclick="showPage('inventory')">Inventory</a>
         <a onclick="showPage('about')">About Me</a>
       </div>
+      <div class="logo">3D Dog Toys</div>
     </div>
   </div>
 
